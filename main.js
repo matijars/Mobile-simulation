@@ -83,8 +83,17 @@ menuPlane.addEventListener('click', ()=> {
 const menuPower = document.querySelector('.menu-power')
 const navPower = document.querySelector('.nav-power')
 
-
 menuPower.addEventListener('click', ()=> {
   phone.classList.toggle('phone-power-save'),
   navPower.classList.toggle('show')
+});
+
+// FLASHLIGHT ICON
+const menuFlashlight = document.querySelector('.menu-flashlight')
+const navFlashlight = document.querySelector('.nav-flashlight')
+const flashLight = document.querySelector('.light')
+
+menuFlashlight.addEventListener('click', ()=> {
+  navFlashlight.classList.toggle('show'),
+  flashLight.classList.toggle('show')
 });
