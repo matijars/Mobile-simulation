@@ -63,7 +63,7 @@ menuBluetooth.addEventListener('click', ()=> {
   navBluetooth.classList.toggle('show')
 });
 
-// BLUETOOTH ICON
+// VOLUME ICON
 const menuVolume = document.querySelector('.menu-volume')
 const navVolume = document.querySelector('.nav-volume')
 
@@ -71,7 +71,7 @@ menuVolume.addEventListener('click', ()=> {
   navVolume.classList.toggle('show')
 });
 
-// BLUETOOTH ICON
+// AIRPLANE MODE ICON
 const menuPlane = document.querySelector('.menu-plane')
 const navPlane = document.querySelector('.nav-plane')
 
@@ -96,4 +96,13 @@ const flashLight = document.querySelector('.light')
 menuFlashlight.addEventListener('click', ()=> {
   navFlashlight.classList.toggle('show'),
   flashLight.classList.toggle('show')
+});
+
+// CONTRAST ICON
+const menuContrast = document.querySelector('.menu-contrast')
+const navContrast = document.querySelector('.nav-contrast')
+
+menuContrast.addEventListener('click', ()=> {
+  navContrast.classList.toggle('show'),
+  phone.classList.toggle('phone-contrast')
 });

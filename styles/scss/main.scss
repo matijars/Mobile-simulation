@@ -37,7 +37,7 @@
       padding: 5px;
       height: 30px;
       z-index: 10;
-      background-color: rgba($color: #000000, $alpha: .3);
+      background-color: rgba($color: #000000, $alpha: .2);
 
       .other {
         display: flex;
@@ -204,6 +204,10 @@
   .phone-power-save {
     filter: brightness(50%);
   }
+
+  .phone-contrast {
+    filter: contrast(1.75);
+  }
 }
 
 .hide {
@@ -219,6 +223,6 @@
   width: 150px;
   height: 150px;
   background-color: #fff;
-  box-shadow: -100px -200px 60px 70px #fff; 
+  box-shadow: -100px -200px 90px 120px #fff; 
   border-radius: 50%;
 }
