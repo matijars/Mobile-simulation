@@ -19,8 +19,11 @@
     background-image: url(/landscape-photography-of-snowy-mountain-1366919.jpg);
     background-size: cover;
     background-position: center;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    border-top: 7px solid #000;
+    border-bottom: 7px solid #000;
     border-radius: 10px;
-    border: 3px solid #000;
     position: relative;
     overflow: hidden;
 
@@ -28,7 +31,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 12px;
+      font-size: 13px;
       padding: 5px;
       height: 30px;
       z-index: 10;
@@ -171,7 +174,18 @@
   .phone-landscape {
     width: 550px;
     height: 300px;
+    border-left: 7px solid #000;
+    border-right: 7px solid #000;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+
   }
 }
 
-// PHONE MENU ICONS ON/OFF
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
