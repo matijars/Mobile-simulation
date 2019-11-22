@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  .phone {
+    width: 250px;
+    height: 450px;
+    background-image: url(/landscape-photography-of-snowy-mountain-1366919.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border: 3px solid #000;
+    position: relative;
+    overflow: hidden;
+
+    .phone-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      padding: 5px;
+      height: 30px;
+      z-index: 10;
+      background-color: rgba($color: #000000, $alpha: .3);
+
+      .other {
+        display: flex;
+        
+
+        .items {
+          margin-left: 3px;
+        }
+      }
+    }
+
+    .phone-menu {
+      display: flex;
+      font-size: 20px;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      background-color: #fff;
+      color: rgb(95, 95, 95);
+      padding: 5px 10px 10px 5px;
+      transform: translateY(-150%);
+      opacity: 0;
+      transition: all .7s ease;
+      position: absolute;
+      z-index: 9;
+
+      .menu-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 70px;
+        height: 50px;
+        text-align: center;
+        padding: 5px;
+        margin: 3px;
+
+        &::after {
+          position: absolute;
+          content: "";
+          height: 1px;
+          width: 50%;
+          background-color: #ccc;
+          top: 60%;
+        }
+
+        & ion-icon {
+          transition: .3s ease;
+        }
+
+        &:hover > ion-icon {
+          transform: scale(1.1);
+        }
+
+        .item-name {
+          font-size: 9px;
+        }
+      }
+
+      .menu-item-active {
+        color: rgb(0, 195, 255);
+      }
+    }
+
+    .phone-menu-active {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+
+    .finger-print {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 40px;
+      opacity: .6;
+      animation-name: finger;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+
+      @keyframes finger {
+        0%   {
+          opacity: .2;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: .2;
+        }
+      }
+    }
+
+    .finger-print-disabled {
+      display: none;
+    }
+
+    .phone-lock {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 40px;
+      visibility: hidden;
+    }
+
+    .phone-lock-active {
+      visibility: visible;
+    }
+
+    .phone-display {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      opacity: 0;
+      transition: all 1s ease;
+
+      .display-icons {
+        margin: 15px 0px;
+
+        & img {
+          width: 35px;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
+    .phone-display-active {
+      opacity: 1;
+    }
+  }
+
+  .phone-landscape {
+    width: 550px;
+    height: 300px;
+  }
+}
+
+// PHONE MENU ICONS ON/OFF
