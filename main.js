@@ -78,3 +78,13 @@ const navPlane = document.querySelector('.nav-plane')
 menuPlane.addEventListener('click', ()=> {
   navPlane.classList.toggle('show')
 });
+
+// BLUE LIGHT FILTER ICON
+const menuPower = document.querySelector('.menu-power')
+const navPower = document.querySelector('.nav-power')
+
+
+menuPower.addEventListener('click', ()=> {
+  phone.classList.toggle('phone-power-save'),
+  navPower.classList.toggle('show')
+});
