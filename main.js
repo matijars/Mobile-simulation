@@ -106,3 +106,42 @@ menuContrast.addEventListener('click', ()=> {
   navContrast.classList.toggle('show'),
   phone.classList.toggle('phone-contrast')
 });
+
+// DISPLAY APLICATIONS
+
+// FB APP
+const facebookIcon = document.querySelector('#facebook-icon')
+const facebookApp = document.querySelector('.facebook-app')
+
+facebookIcon.addEventListener('click', ()=> {
+  facebookApp.classList.toggle('hide'),
+  fingerPrint.classList.toggle('hide'),
+  phoneLock.classList.toggle('hide')
+});
+
+const fbReturn = document.querySelector('.fb-return')
+
+fbReturn.addEventListener('click', ()=> {
+  facebookApp.classList.toggle('hide'),
+  fingerPrint.classList.toggle('hide'),
+  phoneLock.classList.toggle('hide')
+});
+
+// INSTA APP
+const instaIcon = document.querySelector('#instagram-icon')
+const instaApp = document.querySelector('.instagram-app')
+
+instaIcon.addEventListener('click', ()=> {
+  instaApp.classList.toggle('hide'),
+  fingerPrint.classList.toggle('hide'),
+  phoneLock.classList.toggle('hide')
+});
+
+const appReturn = document.querySelector('.insta-return')
+
+appReturn.addEventListener('click', ()=> {
+  instaApp.classList.toggle('hide'),
+  fingerPrint.classList.toggle('hide'),
+  phoneLock.classList.toggle('hide')
+});
+

@@ -124,6 +124,8 @@
       visibility: visible; }
     .container .phone .phone-display {
       display: flex;
+      position: absolute;
+      width: 100%;
       justify-content: space-around;
       flex-wrap: wrap;
       opacity: 0;
@@ -148,12 +150,6 @@
   .container .phone-contrast {
     filter: contrast(1.75); }
 
-.hide {
-  display: none; }
-
-.show {
-  display: block; }
-
 .light {
   position: absolute;
   width: 150px;
@@ -161,3 +157,149 @@
   background-color: #fff;
   box-shadow: -100px -200px 90px 120px #fff;
   border-radius: 50%; }
+
+.app {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.app-input-groups {
+  display: flex;
+  flex-direction: column;
+  width: 80%; }
+  .app-input-groups .inputs {
+    background: none;
+    outline: none;
+    border: none; }
+
+.app-btn {
+  border: none;
+  outline: none; }
+
+.app-return {
+  position: absolute;
+  font-size: 30px;
+  color: #fff;
+  left: -2%;
+  top: 0;
+  font-size: 40px; }
+
+.facebook-app {
+  background-color: #3B5998; }
+  .facebook-app .fb-logo {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: -50px; }
+  .facebook-app .fb-input {
+    border-bottom: 1px solid #ACB9D3;
+    padding: 7px 3px; }
+    .facebook-app .fb-input::placeholder {
+      color: #ACB9D3; }
+  .facebook-app .fb-btn {
+    background-color: #4E69A2;
+    color: #899BC1;
+    margin-top: 20px;
+    padding: 7px 0px;
+    text-transform: uppercase; }
+  .facebook-app .fb-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; }
+    .facebook-app .fb-links a {
+      margin-top: 5px;
+      text-decoration: none;
+      color: #fff; }
+
+.instagram-app {
+  background-image: linear-gradient(to bottom right, #7C50AD, #C43867);
+  display: flex;
+  width: 100%;
+  height: 100%; }
+  .instagram-app .insta-logo {
+    width: 50%;
+    color: white;
+    margin-bottom: 20px; }
+  .instagram-app .insta-input {
+    background-color: #A4579F;
+    padding: 10px 10px;
+    margin-bottom: 10px; }
+    .instagram-app .insta-input::placeholder {
+      color: #D9BCDA;
+      font-size: 14px; }
+  .instagram-app .insta-btn {
+    background-color: transparent;
+    border: 1px solid #b173ad;
+    padding: 10px 0px;
+    color: #b173ad;
+    font-weight: bold;
+    margin-bottom: 15px; }
+  .instagram-app .insta-sign-in {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px; }
+    .instagram-app .insta-sign-in p {
+      margin-bottom: 6px;
+      color: #D9BCDA; }
+    .instagram-app .insta-sign-in a {
+      text-decoration: none;
+      color: #E6C1D8;
+      font-weight: bold; }
+    .instagram-app .insta-sign-in .insta-or {
+      margin: 6px 0px; }
+      .instagram-app .insta-sign-in .insta-or::before {
+        content: "";
+        position: absolute;
+        background-color: #b173ad;
+        left: 0;
+        top: 48%;
+        width: 40%;
+        height: 1px; }
+      .instagram-app .insta-sign-in .insta-or::after {
+        content: "";
+        position: absolute;
+        background-color: #b173ad;
+        right: 0;
+        top: 48%;
+        width: 40%;
+        height: 1px; }
+    .instagram-app .insta-sign-in .insta-log-in {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .instagram-app .insta-sign-in .insta-log-in .insta-fb-icon {
+        font-size: 20px;
+        margin-right: 5px; }
+      .instagram-app .insta-sign-in .insta-log-in a {
+        font-size: 16px;
+        color: #fff; }
+  .instagram-app .insta-footer {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 6%;
+    padding: 8px 0px;
+    font-size: 13px;
+    border-top: 1px solid #b173ad; }
+    .instagram-app .insta-footer p {
+      margin-right: 5px;
+      color: #D9BCDA; }
+    .instagram-app .insta-footer a {
+      color: #E6C1D8;
+      font-weight: bold;
+      text-decoration: none; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: inline-block; }

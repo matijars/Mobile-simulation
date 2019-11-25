@@ -168,6 +168,8 @@
 
     .phone-display {
       display: flex;
+      position: absolute;
+      width: 100%;
       justify-content: space-around;
       flex-wrap: wrap;
       opacity: 0;
@@ -210,14 +212,6 @@
   }
 }
 
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
 .light {
   position: absolute;
   width: 150px;
@@ -225,4 +219,209 @@
   background-color: #fff;
   box-shadow: -100px -200px 90px 120px #fff; 
   border-radius: 50%;
+}
+
+// DISPLAY APPLICATIONS
+
+.app {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-input-groups {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+
+  .inputs {
+    background: none;
+    outline: none;
+    border: none;
+  }
+}
+
+.app-btn {
+  border: none;
+  outline: none;
+}
+
+.app-return {
+  position: absolute;
+  font-size: 30px;
+  color: #fff;
+  left: -2%;
+  top: 0;
+  font-size: 40px;
+}
+
+// FACEBOOK APP
+.facebook-app {
+  background-color: #3B5998;
+
+  .fb-logo {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: -50px;
+  }
+
+  .fb-input {
+    border-bottom: 1px solid #ACB9D3;
+    padding: 7px 3px ;
+
+    &::placeholder {
+      color: #ACB9D3;
+    }
+  }
+
+  .fb-btn {
+    background-color: #4E69A2;
+    color: #899BC1;
+    margin-top: 20px;
+    padding: 7px 0px;
+    text-transform: uppercase;
+  }
+  
+
+  .fb-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    & a {
+      margin-top: 5px;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+
+// INSTAGRAM APP
+.instagram-app {
+  background-image: linear-gradient(to bottom right, #7C50AD, #C43867);
+  display: flex;
+  width: 100%;
+  height: 100%;
+ 
+  .insta-logo {
+    width: 50%;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .insta-input {
+    background-color: #A4579F;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    
+    &::placeholder {
+      color: #D9BCDA;
+      font-size: 14px;
+    }
+  }
+
+  .insta-btn {
+    background-color: transparent;
+    border: 1px solid rgb(177, 115, 173);
+    padding: 10px 0px;
+    color: rgb(177, 115, 173);
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .insta-sign-in {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+
+    & p {
+      margin-bottom: 6px;
+      color: #D9BCDA;
+    }
+
+    & a {
+      text-decoration: none;
+      color: #E6C1D8;
+      font-weight: bold;
+    }
+
+    .insta-or {
+      margin: 6px 0px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: rgb(177, 115, 173);
+        left: 0;
+        top: 48%;
+        width: 40%;
+        height: 1px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: rgb(177, 115, 173);
+        right: 0;
+        top: 48%;
+        width: 40%;
+        height: 1px;
+      }
+    }
+
+    .insta-log-in {
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+
+      .insta-fb-icon {
+        font-size: 20px;
+        margin-right: 5px;
+      }
+
+      & a {
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+  }
+
+  .insta-footer {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 6%;
+    padding: 8px 0px;
+    font-size: 13px;
+    border-top: 1px solid rgb(177, 115, 173);
+
+    & p {
+      margin-right: 5px;
+      color: #D9BCDA;
+    }
+
+    & a {
+      color: #E6C1D8;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline-block;
 }
