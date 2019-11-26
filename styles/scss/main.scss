@@ -231,6 +231,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform: translateY(100%);
+  transition: transform .5s ease-in-out;
 }
 
 .app-input-groups {
@@ -305,8 +307,6 @@
 .instagram-app {
   background-image: linear-gradient(to bottom right, #7C50AD, #C43867);
   display: flex;
-  width: 100%;
-  height: 100%;
  
   .insta-logo {
     width: 50%;
@@ -420,6 +420,10 @@
 
 .hide {
   display: none;
+}
+
+.app-open {
+  transform: translateY(0%);
 }
 
 .show {

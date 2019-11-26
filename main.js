@@ -114,7 +114,7 @@ const facebookIcon = document.querySelector('#facebook-icon')
 const facebookApp = document.querySelector('.facebook-app')
 
 facebookIcon.addEventListener('click', ()=> {
-  facebookApp.classList.toggle('hide'),
+  facebookApp.classList.toggle('app-open'),
   fingerPrint.classList.toggle('hide'),
   phoneLock.classList.toggle('hide')
 });
@@ -122,7 +122,7 @@ facebookIcon.addEventListener('click', ()=> {
 const fbReturn = document.querySelector('.fb-return')
 
 fbReturn.addEventListener('click', ()=> {
-  facebookApp.classList.toggle('hide'),
+  facebookApp.classList.toggle('app-open'),
   fingerPrint.classList.toggle('hide'),
   phoneLock.classList.toggle('hide')
 });
@@ -132,16 +132,15 @@ const instaIcon = document.querySelector('#instagram-icon')
 const instaApp = document.querySelector('.instagram-app')
 
 instaIcon.addEventListener('click', ()=> {
-  instaApp.classList.toggle('hide'),
+  instaApp.classList.toggle('app-open'),
   fingerPrint.classList.toggle('hide'),
   phoneLock.classList.toggle('hide')
 });
 
-const appReturn = document.querySelector('.insta-return')
+const instaReturn = document.querySelector('.insta-return')
 
-appReturn.addEventListener('click', ()=> {
-  instaApp.classList.toggle('hide'),
+instaReturn.addEventListener('click', ()=> {
+  instaApp.classList.toggle('app-open'),
   fingerPrint.classList.toggle('hide'),
   phoneLock.classList.toggle('hide')
 });
-
